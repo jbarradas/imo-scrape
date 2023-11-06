@@ -1,0 +1,21 @@
+{
+  "name": "imo-scrape",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "env-cmd nodemon index.js",
+    "repl": "env-cmd node"
+  },
+  "keywords": [],
+  "author": "João Barradas <joao@jbarradas.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "dependencies": {
+    "@cyclic.sh/dynamodb": "^0.0.33",
+    "env-cmd": "^10.1.0",
+    "express": "^4.18.1"
+  }
+}
