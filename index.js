@@ -75,7 +75,6 @@ app.get("/:col", async (req, res) => {
   console.log(
     `list collection: ${col} with params: ${JSON.stringify(req.params)}`
   );
-  Cyclic;
   const items = await db.collection(col).list();
   console.log(JSON.stringify(items, null, 2));
   res.json(items).end();

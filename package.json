@@ -5,13 +5,21 @@
   "main": "index.js",
   "scripts": {
     "dev": "env-cmd nodemon index.js",
-    "repl": "env-cmd node"
+    "repl": "env-cmd node",
+    "format:check": "prettier --check .",
+    "format:write": "prettier --write .",
+    "lint:check": "eslint .",
+    "lint:fix": "eslint --fix ."
   },
   "keywords": [],
   "author": "João Barradas <joao@jbarradas.com>",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^2.0.22"
+    "eslint": "^8.53.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-react": "^7.33.2",
+    "nodemon": "^2.0.22",
+    "prettier": "^3.0.3"
   },
   "dependencies": {
     "@cyclic.sh/dynamodb": "^0.0.33",
